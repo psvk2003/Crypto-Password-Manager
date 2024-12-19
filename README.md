@@ -9,24 +9,24 @@ The system allows users to securely store and retrieve passwords through a simpl
 Through meticulous implementation of the Advanced Encryption Standard (AES) and a custom SHA-256 hashing algorithm, we establish a formidable defense against unauthorized access and potential data breaches.
 
 ## Proposed Methodology
-<h3>Web Framework Selection</h3>:
+<h3>Web Framework Selection:</h3>
 Flask, a lightweight and extensible web framework, is chosen for its simplicity and flexibility in handling HTTP requests. It facilitates the creation of web applications with minimal boilerplate code.
 Password Security Measures:
 The master password is hashed using the SHA-256 algorithm, a widely accepted and secure hashing function. Hashing provides a one-way transformation, enhancing the security of stored passwords.
 
-<h3>Key Derivation with PBKDF2</h3>:
+<h3>Key Derivation with PBKDF2:</h3>
 The PBKDF2 key derivation function is applied to the hashed master password for generating an encryption key. This process introduces computational complexity, making it resistant to brute-force attacks and enhancing key security.
 
-<h3>AES Encryption</h3>:
+<h3>AES Encryption:</h3>
 The Advanced Encryption Standard (AES) is employed for encrypting passwords. AES is a symmetric encryption algorithm widely recognized for its security and efficiency.
 
-<h3>Secure Password Storage</h3>:
+<h3>Secure Password Storage:</h3>
 Encrypted passwords are securely stored, and only the hashed master password is stored for verification purposes. This adds an additional layer of security, as even if the stored data is compromised, it would be challenging to retrieve the original master password.
 
-<h3>Web API Endpoints for Operations</h3>:
+<h3>Web API Endpoints for Operations:</h3>
 The application exposes two main endpoints - one for storing passwords securely and another for retrieving passwords. These endpoints follow best practices for handling JSON data and provide a simple yet effective interface for password management.
 
-<h3>Error Handling and User Feedback</h3>:
+<h3>Error Handling and User Feedback:</h3>
 The code includes error handling mechanisms to provide meaningful feedback to users, ensuring a smooth an user-friendly experience. This is essential for effective communication in case of incorrect inputs or potential issues.
 
 ## AES Encryption:
